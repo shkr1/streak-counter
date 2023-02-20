@@ -1,0 +1,37 @@
+{
+  "name": "@shkr1/streak-counter",
+  "version": "0.0.1",
+  "description": "a streak counter inspired by Duolingo",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/shkr1/streak-counter"
+  },
+  "type": "module",
+  "types": "./dist/index.d.ts",
+  "source": "src/index.ts",
+  "exports": {
+    "require": "./dist/index.cjs",
+    "default": "./dist/index.modern.js"
+  },
+  "main": "./dist/index.cjs",
+  "module": "./dist/index.module.js",
+  "unpkg": "./dist/index.umd.js",
+  "scripts": {
+    "build": "microbundle",
+    "dev": "microbundle watch",
+    "test": "vitest"
+  },
+  "keywords": [
+    "streak-counter"
+  ],
+  "author": "Gildardo Rosas <gildardo.rosas96@gmail.com>",
+  "license": "MIT",
+  "devDependencies": {
+    "@types/jsdom": "^21.1.0",
+    "jsdom": "^21.1.0",
+    "microbundle": "^0.15.1",
+    "typescript": "^4.9.5",
+    "vite": "^4.1.2",
+    "vitest": "^0.28.5"
+  }
+}
